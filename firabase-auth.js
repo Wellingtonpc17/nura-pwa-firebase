@@ -9,12 +9,13 @@ import {
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyBoSeMo0JROnkjtNPQXCyt9Ezzi_pUrtN8",
-    authDomain: "nura-firebase-aula24112025.firebaseapp.com",
-    projectId: "nura-firebase-aula24112025",
-    storageBucket: "nura-firebase-aula24112025.firebasestorage.app",
-    messagingSenderId: "622140430264",
-    appId: "1:622140430264:web:5622fe037075fbe723614d"
+    apiKey: "AIzaSyCeROxrEbhuDM4hS-QOAnK5mEZbC39ZyPI",
+    authDomain: "nura-3c4e9.firebaseapp.com",
+    projectId: "nura-3c4e9",
+    storageBucket: "nura-3c4e9.firebasestorage.app",
+    messagingSenderId: "412561169474",
+    appId: "1:412561169474:web:be7508b7c01da8a3b6a1db",
+    measurementId: "G-LGPRRZQ26C"
 };
 
 const app = initializeApp(firebaseConfig);
@@ -61,5 +62,6 @@ function tratarErro(error) {
     if (error.code === 'auth/weak-password') return 'Senha muito fraca (mínimo 6 dígitos).';
     return 'Erro: ' + error.message;
 }
+
 
 console.log("Firebase carregado com sucesso!");
