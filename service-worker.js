@@ -11,8 +11,8 @@ const ASSETS = [
   '/pages/produtos.html',
   '/pages/carrinho.html',
 
-  './icons/favicon-192.png',
-  './icons/favicon-512.png'
+  '/icons/favicon-192.png',
+  '/icons/favicon-512.png'
 ];
 
 self.addEventListener('install', (e) => {
@@ -28,3 +28,4 @@ self.addEventListener('fetch', (e) => {
     )
   );
 });
+
