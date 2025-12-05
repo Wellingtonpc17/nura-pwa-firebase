@@ -1,11 +1,11 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-app.js";
-import { 
-    getAuth, 
-    createUserWithEmailAndPassword, 
-    signInWithEmailAndPassword, 
-    updateProfile, 
-    onAuthStateChanged, 
-    signOut 
+import {
+    getAuth,
+    createUserWithEmailAndPassword,
+    signInWithEmailAndPassword,
+    updateProfile,
+    onAuthStateChanged,
+    signOut
 } from "https://www.gstatic.com/firebasejs/12.6.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -62,6 +62,5 @@ function tratarErro(error) {
     if (error.code === 'auth/weak-password') return 'Senha muito fraca (mínimo 6 dígitos).';
     return 'Erro: ' + error.message;
 }
-
 
 console.log("Firebase carregado com sucesso!");
